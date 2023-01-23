@@ -24,7 +24,7 @@ public class BootController {
 
     @GetMapping(value = "/hello")
     public String getHello() {
-        logger.info("inside getHello controller:");
+        logger.info("inside getHello controller::");
         return "hello program executed successfully:";
     }
 
