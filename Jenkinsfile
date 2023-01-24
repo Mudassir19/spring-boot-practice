@@ -9,7 +9,7 @@ pipeline
 			steps
 			{
 				echo "Building the code"
-				cmd_exec "mvn clean"
+				cmd "mvn clean"
 			}
 		}
 		stage("Test")
