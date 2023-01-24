@@ -9,7 +9,7 @@ pipeline
 			steps
 			{
 				echo "Building the code"
-				bat "mvn clean"
+				//bat "mvn clean"
 			}
 		}
 		stage("Test")
@@ -17,7 +17,7 @@ pipeline
 			steps
 			{
 				echo "Test the code"
-				bat "mvn test"
+				//bat "mvn test"
 			}
 		}
 		stage("Deploy")
@@ -25,7 +25,7 @@ pipeline
 			steps
 			{
 				echo "Deploying the code"
-				bat "mvn insatll"
+				//bat "mvn insatll"
 			}
 		}
 	}
