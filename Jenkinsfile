@@ -1,8 +1,16 @@
 pipeline
 {
 	agent any
+
 	tools {
-	Maven 
+        // Install the Maven version configured as "M3" and add it to the path.
+        maven "Maven"
+    }
+
+    environment {
+
+    PATH = "C:\\WINDOWS\\SYSTEM32"
+
 	}
 
 	stages
@@ -20,7 +28,7 @@ pipeline
 			steps
 			{
 				echo "Test the code"
-				//bat "mvn test"
+				bat "mvn test"
 			}
 		}
 		stage("Deploy")
@@ -28,7 +36,7 @@ pipeline
 			steps
 			{
 				echo "Deploying the code"
-				//bat "mvn insatll"
+				bat "mvn install"
 			}
 		}
 	}
