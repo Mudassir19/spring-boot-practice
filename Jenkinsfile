@@ -39,5 +39,13 @@ pipeline
 				bat "mvn install"
 			}
 		}
+		stage("DockerImage")
+		{
+			steps
+			{
+				echo "building docker image"
+				bat "docker build -t docker-jenkins-integration.jar ."
+			}
+		}
 	}
 }
