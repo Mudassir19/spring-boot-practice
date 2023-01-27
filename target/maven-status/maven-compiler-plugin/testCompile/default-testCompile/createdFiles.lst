@@ -1,0 +1,4 @@
+com\practice\boot\service\BootServiceImplTests.class
+com\practice\boot\BootApplicationTests.class
+com\practice\boot\controller\BootControllerTests.class
+com\practice\boot\controller\ControllerMockMvcTest.class
